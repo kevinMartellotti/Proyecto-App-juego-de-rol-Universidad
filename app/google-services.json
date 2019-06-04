@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1075989059089",
+    "firebase_url": "https://malagacar-1559322355853.firebaseio.com",
+    "project_id": "malagacar-1559322355853",
+    "storage_bucket": "malagacar-1559322355853.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075989059089:android:32c64d9427fe50f2",
+        "android_client_info": {
+          "package_name": "rol.malagacar.kevin.proyectorol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075989059089-ufkvui3m3ajluug5jcdlmsljbum38nvl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rol.malagacar.kevin.proyectorol",
+            "certificate_hash": "75700806948aa4031b6a5cc90b97d099a714ebe6"
+          }
+        },
+        {
+          "client_id": "1075989059089-sovopv08ut2lcob8uaigee0n4pjdgktj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBDYeMzm-DyUNM4fmk_SCyHtRDIpDHkS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075989059089-sovopv08ut2lcob8uaigee0n4pjdgktj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
