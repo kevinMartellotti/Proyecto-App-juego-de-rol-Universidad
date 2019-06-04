@@ -146,6 +146,7 @@ public class PerfilActivity extends AppCompatActivity {
             {
                 //Do stuff, possibly set wantToCloseDialog to true then...
 
+                sharedPref.edit().putString("user_id", input1.getText().toString()).apply();
                 ref.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -168,13 +169,12 @@ public class PerfilActivity extends AppCompatActivity {
                     textViewFormaContacto.setText("Forma de contacto: " + input3.getText());
                     textViewGeneroFavorito.setText("Juegos favoritos: " + input4.getText());
 
-                    sharedPref.edit().putString("user_id", input1.getText().toString()).commit();
-                    sharedPref.edit().putString("nombre", input2.getText().toString()).commit();
-                    sharedPref.edit().putString("formascontacto", input3.getText().toString()).commit();
-                    sharedPref.edit().putString("juegos", input4.getText().toString()).commit();
+                    sharedPref.edit().putString("user_id", input1.getText().toString()).apply();
+                    sharedPref.edit().putString("nombre", input2.getText().toString()).apply();
+                    sharedPref.edit().putString("formascontacto", input3.getText().toString()).apply();
+                    sharedPref.edit().putString("juegos", input4.getText().toString()).apply();
 
                     ref.child(USUARIOS).child(input1.getText().toString()).setValue(new Usuario(input2.getText().toString(),input3.getText().toString(),input4.getText().toString(),false));
-
                 }
                 else{
                     input1.setHint("NICKNAME EN USO");
